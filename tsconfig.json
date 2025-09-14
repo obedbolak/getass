@@ -18,8 +18,9 @@
         "name": "next"
       }
     ],
+    "baseUrl": "src", // 👈 root is now the `src` directory
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["*"] // 👈 alias `@/` points inside `src`
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
